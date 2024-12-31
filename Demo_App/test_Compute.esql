@@ -19,6 +19,7 @@ CREATE COMPUTE MODULE test_Compute
 	END;
 
 	CREATE PROCEDURE CopyEntireMessage() BEGIN
+		SET Environment.Variables.name = 'Paul';
 		SET OutputRoot = InputRoot;
 	END;
 END MODULE;
